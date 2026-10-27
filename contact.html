@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f2">
+  <meta name="description" content="Hubungi Zarkasi untuk kolaborasi proyek, konsultasi desain antarmuka UI/UX, dan pengembangan website modern.">
+  <title>Kontak & Kolaborasi — Zarkasi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a class="brand" href="index.html" aria-label="Zarkasi, halaman utama">
+        <span class="brand-mark">z.</span>
+        <span>zarkasi<span class="brand-dot">.</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Buka menu">
+        <span></span><span></span>
+      </button>
+      <div class="nav-menu" id="primary-menu">
+        <a class="nav-link" href="index.html">Beranda</a>
+        <a class="nav-link" href="projects.html">Proyek</a>
+        <a class="nav-link" href="about.html">Tentang</a>
+        <a class="nav-link active" href="contact.html" aria-current="page">Kontak</a>
+        <button class="theme-toggle" type="button" aria-label="Aktifkan tema gelap" title="Ganti tema">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z"></path></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="contact-page container">
+    <section class="page-header reveal">
+      <p class="eyebrow"><span class="status-dot"></span> 03 / MULAI PERCAKAPAN</p>
+      <h1>Mari buat sesuatu<br>yang <span class="highlight">berarti.</span></h1>
+      <p class="page-intro">Punya proyek baru, tawaran kolaborasi, kebutuhan konsultasi UI/UX, atau sekadar ingin menyapa? Pintu saya selalu terbuka untuk mendengarkan visi dan cerita Anda.</p>
+    </section>
+
+    <div class="contact-grid">
+      <!-- Kolom Kiri: Informasi Kredensial & Saluran Langsung -->
+      <div class="contact-info-panel reveal">
+        <div class="info-card">
+          <div class="status-pill">
+            <span class="status-pulse" aria-hidden="true"></span>
+            <span>Tersedia untuk Proyek Baru & Freelance</span>
+          </div>
+          <h3 style="margin-top: 18px;">Komitmen & Ketersediaan</h3>
+          <p>Saya menerima proyek freelance dan kontrak pengembangan web dengan alur kerja yang terstruktur dan transparan. Biasanya membalas pesan dalam waktu 1x24 jam kerja.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>Surel Langsung</h3>
+          <p>Kirim pesan langsung ke kotak masuk saya atau salin alamat email dengan satu klik:</p>
+          <div class="contact-email-box">
+            <span>halo.zarkasi@gmail.com</span>
+            <button type="button" id="copy-email-btn" class="copy-btn" data-email="halo.zarkasi@gmail.com" aria-label="Salin alamat email">Salin Email</button>
+          </div>
+          <a class="text-link" href="mailto:halo.zarkasi@gmail.com?subject=Halo%20Zarkasi%2C%20mari%20berkolaborasi">
+            Buka aplikasi email Anda <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="info-card">
+          <h3>Lokasi & Saluran Profesional</h3>
+          <p>📍 Indonesia (Waktu Indonesia Barat / UTC+7)</p>
+          <div class="social-pills">
+            <a class="social-pill" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a class="social-pill" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a class="social-pill" href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble ↗</a>
+            <a class="social-pill" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan: Formulir Kirim Pesan -->
+      <div class="contact-form-panel reveal">
+        <h3>Kirim Pesan Langsung</h3>
+        <p>Silakan isi informasi di bawah ini untuk memulai obrolan seputar proyek Anda:</p>
+        <div id="contact-alert" class="form-alert" role="alert"></div>
+
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="contact-name">Nama Lengkap *</label>
+            <input class="form-input" id="contact-name" type="text" placeholder="Masukkan nama Anda" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-email">Alamat Email *</label>
+            <input class="form-input" id="contact-email" type="email" placeholder="nama@perusahaan.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-service">Kebutuhan / Layanan *</label>
+            <select class="form-select" id="contact-service" required>
+              <option value="" disabled selected>Pilih jenis layanan...</option>
+              <option value="ui-ux">Perancangan Desain UI / UX Antarmuka</option>
+              <option value="web-dev">Pengembangan Website & Frontend Modern</option>
+              <option value="redesign">Redesain & Optimasi Pengalaman Web</option>
+              <option value="consultation">Konsultasi Desain & Diskusi Produk</option>
+              <option value="other">Peluang Lainnya / Sapaan Umum</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-message">Ceritakan Kebutuhan Proyek Anda *</label>
+            <textarea class="form-textarea" id="contact-message" placeholder="Jelaskan ringkasan proyek, estimasi batas waktu, atau pertanyaan yang ingin didiskusikan..." required></textarea>
+          </div>
+
+          <button class="button button-primary" type="submit" style="width: 100%; margin-top: 8px;">
+            Kirim Pesan Sekarang <span aria-hidden="true">↗</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section reveal">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PERTANYAAN UMUM</p>
+          <h2>Hal yang sering ditanyakan<br><span class="muted-heading">seputar kerja sama.</span></h2>
+        </div>
+        <p class="section-intro">
+          Informasi transparan untuk membantu Anda memahami alur kerja, jangka waktu, dan komitmen profesional saya.
+        </p>
+      </div>
+
+      <div class="faq-grid">
+        <article class="faq-card">
+          <span class="faq-number">01</span>
+          <h3>Bagaimana tahapan awal memulai kerja sama proyek?</h3>
+          <p>Kita mulai dengan sesi diskusi singkat mengenai tujuan bisnis, target pengguna, dan fitur utama yang dibutuhkan. Setelah itu, saya akan menyusun rencana kerja, estimasi waktu, dan proposal biaya transparan.</p>
+        </article>
+
+        <article class="faq-card">
+          <span class="faq-number">02</span>
+          <h3>Berapa lama estimasi pengerjaan suatu website?</h3>
+          <p>Tergantung pada skala proyek. Website profil atau landing page biasanya selesai dalam 1 — 2 minggu, sedangkan sistem antarmuka dashboard atau aplikasi web interaktif membutuhkan waktu 3 — 5 minggu.</p>
+        </article>
+
+        <article class="faq-card">
+          <span class="faq-number">03</span>
+          <h3>Apakah bisa hanya memesan desain UI/UX tanpa kode?</h3>
+          <p>Tentu saja. Anda bisa memesan perancangan desain antarmuka lengkap di Figma, atau memesan implementasi kode web dari desain yang sudah Anda miliki sebelumnya.</p>
+        </article>
+
+        <article class="faq-card">
+          <span class="faq-number">04</span>
+          <h3>Bagaimana alur komunikasi selama proyek berjalan?</h3>
+          <p>Komunikasi rutin dapat dilakukan melalui Email, WhatsApp, Google Meet, atau platform kolaborasi seperti Notion/Trello dengan pembaruan berkala setiap minggu.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">z.</span>
+        <span>zarkasi<span class="brand-dot">.</span></span>
+      </a>
+      <span>Dirancang dengan rasa ingin tahu. © <span data-year></span> Zarkasi</span>
+      <a class="back-top" href="#main">Kembali ke atas ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

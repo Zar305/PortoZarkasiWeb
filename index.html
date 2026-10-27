@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f2">
+  <meta name="description" content="Portofolio Zarkasi — desain digital dan pengembangan web yang mengutamakan pengalaman pengguna.">
+  <title>Zarkasi — Digital Designer & Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a class="brand" href="index.html" aria-label="Zarkasi, halaman utama"><span class="brand-mark">z.</span><span>zarkasi<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Buka menu">
+        <span></span><span></span>
+      </button>
+      <div class="nav-menu" id="primary-menu">
+        <a class="nav-link active" href="index.html" aria-current="page">Beranda</a>
+        <a class="nav-link" href="projects.html">Proyek</a>
+        <a class="nav-link" href="about.html">Tentang</a>
+        <a class="nav-link" href="contact.html">Kontak</a>
+        <button class="theme-toggle" type="button" aria-label="Aktifkan tema gelap" title="Ganti tema">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z"></path></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> PORTOFOLIO DIGITAL <span class="eyebrow-year">2025 — 2026</span></p>
+        <h1>Ide yang baik<br>layak jadi <span class="highlight">nyata.</span></h1>
+        <p class="hero-description">Halo, saya <strong>Zarkasi</strong> — saya merancang pengalaman digital yang terasa sederhana dan membangun website yang bekerja dengan baik.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="projects.html">Jelajahi karya <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="about.html">Kenali saya <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-meta"><span>Berbasis di Indonesia</span><span class="meta-line"></span><span>Terbuka untuk kolaborasi</span></div>
+      </div>
+      <div class="hero-art reveal" aria-label="Ilustrasi antarmuka desain digital" role="img">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-spark spark-one">✳</div>
+        <div class="art-spark spark-two">✳</div>
+        <div class="art-card">
+          <div class="art-card-top"><span class="mini-brand"><i></i> studio notes</span><span class="mini-menu">•••</span></div>
+          <div class="art-card-body">
+            <span class="art-label">IDEA NO. 014</span>
+            <strong>Make it<br>meaningful.</strong>
+            <span class="art-underline"></span>
+          </div>
+          <div class="art-card-bottom"><span>DESIGN WITH INTENTION</span><span>↗</span></div>
+        </div>
+        <div class="floating-note note-top"><span class="note-icon">✦</span><span>Desain yang<br>punya tujuan</span></div>
+        <div class="floating-note note-bottom"><span class="note-check">✓</span><span>Pengalaman<br>yang intuitif</span></div>
+        <span class="art-caption">DESIGN · BUILD · REFINE</span>
+      </div>
+      <a class="scroll-cue" href="#featured" aria-label="Gulir ke bagian karya unggulan"><span></span> GULIR UNTUK MENJELAJAH</a>
+    </section>
+
+    <!-- Ringkasan Karya Pilihan (Teaser Proyek ke Halaman Khusus) -->
+    <section class="section home-preview-section" id="featured">
+      <div class="container">
+        <div class="home-preview-header reveal">
+          <div>
+            <p class="eyebrow">01 / KARYA PILIHAN</p>
+            <h2>Proyek yang<br><span class="muted-heading">punya cerita.</span></h2>
+          </div>
+          <div>
+            <a class="button button-outline" href="projects.html">Lihat Semua Proyek (Arsip Lengkap) <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal" data-category="design">
+            <button class="project-visual visual-finance" type="button" data-project="finance" aria-label="Lihat detail konsep Finora">
+              <span class="visual-index">01 — KONSEP UI</span>
+              <span class="finance-window"><span class="window-dots">● ● ●</span><span class="finance-title">Good morning,<br>Alexandra <span>✦</span></span><span class="finance-balance-label">TOTAL BALANCE</span><span class="finance-balance">$24,680<small>.50</small></span><span class="finance-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="finance-bottom"><i>Overview</i><i>Activity</i><i>Cards</i></span></span>
+              <span class="visual-open">Lihat detail ↗</span>
+            </button>
+            <div class="project-info"><div><p class="project-type">UI / UX DESIGN · FINTECH</p><h3>Finora — Keuangan lebih tenang</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p class="project-summary">Konsep dashboard finansial yang membuat informasi penting mudah dipahami sekilas.</p>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <button class="project-visual visual-nusa" type="button" data-project="nusa" aria-label="Lihat detail konsep Nusa Studio">
+              <span class="visual-index">02 — KONSEP WEBSITE</span>
+              <span class="nusa-window"><span class="nusa-nav">NUSA <span>STUDIO&nbsp;&nbsp;&nbsp; JOURNAL&nbsp;&nbsp;&nbsp; ABOUT</span></span><span class="nusa-copy">A slower<br>kind of <i>living.</i></span><span class="nusa-sub">Objects made to stay. Stories made to keep.</span><span class="nusa-link">DISCOVER THE COLLECTION&nbsp; ↗</span><span class="nusa-shape"></span><span class="nusa-stamp">MADE<br>WITH<br>INTENTION</span></span>
+              <span class="visual-open">Lihat detail ↗</span>
+            </button>
+            <div class="project-info"><div><p class="project-type">WEB DESIGN · LIFESTYLE</p><h3>Nusa Studio — Ruang untuk tumbuh</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p class="project-summary">Konsep website brand lifestyle dengan arah visual yang hangat dan editorial.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ringkasan Nilai & Filosofi Kerja (Teaser Tentang) -->
+    <section class="about-strip section" id="about">
+      <div class="container about-strip-inner reveal">
+        <div class="about-symbol" aria-hidden="true"><span>z.</span><i>✳</i></div>
+        <div class="about-strip-copy"><p class="eyebrow">02 / SEDIKIT TENTANG SAYA</p><h2>Desain yang terasa tepat.<br><span class="muted-heading">Teknologi yang terasa mudah.</span></h2><p>Saya tertarik pada titik temu antara desain, teknologi, dan kebutuhan manusia. Dari ide awal sampai detail terakhir, saya suka membuat hal digital terasa lebih jelas dan bermanfaat.</p><a class="text-link" href="about.html">Lebih lanjut tentang saya <span aria-hidden="true">→</span></a></div>
+        <div class="about-stat"><strong>01</strong><span>Rasa ingin tahu,<br>setiap hari.</span><span class="stat-line"></span><span>DESAIN · KODE · KOLABORASI</span></div>
+      </div>
+    </section>
+
+    <!-- Ajakan Diskusi (Teaser Kontak ke Halaman Khusus) -->
+    <section class="section home-contact-strip" id="contact-cta">
+      <div class="container home-contact-inner reveal">
+        <p class="eyebrow">03 / PUNYA IDE ATAU PROYEK?</p>
+        <h2>Mari buat sesuatu<br><span class="highlight">yang berarti.</span></h2>
+        <p>Punya proyek baru, ide kolaborasi, atau sekadar ingin berdiskusi? Mari berbicara lebih lanjut melalui halaman kontak tersendiri.</p>
+        <div class="hero-actions" style="justify-content: center; margin-top: 24px;">
+          <a class="button button-primary" href="contact.html">Buka Halaman Kontak <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="projects.html">Jelajahi Halaman Proyek <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="brand" href="index.html"><span class="brand-mark">z.</span><span>zarkasi<span class="brand-dot">.</span></span></a><span>Dirancang dengan rasa ingin tahu. © <span data-year></span> Zarkasi</span><a class="back-top" href="#home">Kembali ke atas ↑</a></div>
+  </footer>
+
+  <dialog class="project-dialog" aria-labelledby="dialog-title">
+    <form method="dialog"><button class="dialog-close" aria-label="Tutup detail proyek">×</button></form>
+    <p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2><p id="dialog-description"></p>
+    <div class="dialog-tags" id="dialog-tags"></div>
+  </dialog>
+</body>
+</html>

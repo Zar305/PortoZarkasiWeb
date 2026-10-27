@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f2">
+  <meta name="description" content="Arsip proyek dan studi kasus desain antarmuka serta pengembangan web oleh Zarkasi.">
+  <title>Proyek & Karya — Zarkasi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a class="brand" href="index.html" aria-label="Zarkasi, halaman utama">
+        <span class="brand-mark">z.</span>
+        <span>zarkasi<span class="brand-dot">.</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Buka menu">
+        <span></span><span></span>
+      </button>
+      <div class="nav-menu" id="primary-menu">
+        <a class="nav-link" href="index.html">Beranda</a>
+        <a class="nav-link active" href="projects.html" aria-current="page">Proyek</a>
+        <a class="nav-link" href="about.html">Tentang</a>
+        <a class="nav-link" href="contact.html">Kontak</a>
+        <button class="theme-toggle" type="button" aria-label="Aktifkan tema gelap" title="Ganti tema">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z"></path></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="projects-page container">
+    <section class="page-header reveal">
+      <p class="eyebrow"><span class="status-dot"></span> 01 / ARSIP KARYA & STUDI KASUS</p>
+      <h1>Karya yang dirancang<br>dengan <span class="highlight">presisi & cerita.</span></h1>
+      <p class="page-intro">Eksplorasi mendalam desain antarmuka pengguna, arsitektur informasi, dan website interaktif modern. Setiap proyek dikembangkan dengan tujuan mempermudah interaksi pengguna dan memperkuat identitas produk.</p>
+    </section>
+
+    <div class="project-toolbar reveal" role="group" aria-label="Filter proyek">
+      <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Semua <span>04</span></button>
+      <button class="filter-button" type="button" data-filter="design" aria-pressed="false">UI / UX</button>
+      <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web</button>
+    </div>
+
+    <div class="project-grid">
+      <!-- Proyek 1: Finora -->
+      <article class="project-card reveal" data-category="design">
+        <button class="project-visual visual-finance" type="button" data-project="finance" aria-label="Lihat detail konsep Finora">
+          <span class="visual-index">01 — KONSEP UI</span>
+          <span class="finance-window">
+            <span class="window-dots">● ● ●</span>
+            <span class="finance-title">Good morning,<br>Alexandra <span>✦</span></span>
+            <span class="finance-balance-label">TOTAL BALANCE</span>
+            <span class="finance-balance">$24,680<small>.50</small></span>
+            <span class="finance-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="finance-bottom"><i>Overview</i><i>Activity</i><i>Cards</i></span>
+          </span>
+          <span class="visual-open">Lihat detail ↗</span>
+        </button>
+        <div class="project-info">
+          <div>
+            <p class="project-type">UI / UX DESIGN · FINTECH</p>
+            <h3>Finora — Keuangan lebih tenang</h3>
+          </div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </div>
+        <p class="project-summary">Konsep dashboard finansial yang membuat informasi penting mudah dipahami sekilas dengan hierarki visual yang jelas.</p>
+      </article>
+
+      <!-- Proyek 2: Nusa Studio -->
+      <article class="project-card reveal" data-category="web">
+        <button class="project-visual visual-nusa" type="button" data-project="nusa" aria-label="Lihat detail konsep Nusa Studio">
+          <span class="visual-index">02 — KONSEP WEBSITE</span>
+          <span class="nusa-window">
+            <span class="nusa-nav">NUSA <span>STUDIO&nbsp;&nbsp;&nbsp; JOURNAL&nbsp;&nbsp;&nbsp; ABOUT</span></span>
+            <span class="nusa-copy">A slower<br>kind of <i>living.</i></span>
+            <span class="nusa-sub">Objects made to stay. Stories made to keep.</span>
+            <span class="nusa-link">DISCOVER THE COLLECTION&nbsp; ↗</span>
+            <span class="nusa-shape"></span>
+            <span class="nusa-stamp">MADE<br>WITH<br>INTENTION</span>
+          </span>
+          <span class="visual-open">Lihat detail ↗</span>
+        </button>
+        <div class="project-info">
+          <div>
+            <p class="project-type">WEB DESIGN · LIFESTYLE</p>
+            <h3>Nusa Studio — Ruang untuk tumbuh</h3>
+          </div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </div>
+        <p class="project-summary">Konsep website brand lifestyle dengan arah visual yang hangat, tipografi ekspresif, dan tata letak editorial yang nyaman dibaca.</p>
+      </article>
+
+      <!-- Proyek 3: Grow Together -->
+      <article class="project-card reveal" data-category="web">
+        <button class="project-visual visual-grow" type="button" data-project="grow" aria-label="Lihat detail konsep Grow Together">
+          <span class="visual-index">03 — KONSEP PRODUK</span>
+          <span class="grow-window">
+            <span class="grow-top">
+              <span class="grow-logo">grow<span>.</span></span>
+              <span class="grow-menu">MENU&nbsp; ☰</span>
+            </span>
+            <span class="grow-headline">Small steps.<br><i>Big growth.</i></span>
+            <span class="grow-description">Your next chapter starts with one good habit.</span>
+            <span class="grow-cta">START YOUR JOURNEY&nbsp; ↗</span>
+            <span class="grow-plant">✳</span>
+            <span class="grow-label">A LITTLE BETTER, EVERY DAY</span>
+          </span>
+          <span class="visual-open">Lihat detail ↗</span>
+        </button>
+        <div class="project-info">
+          <div>
+            <p class="project-type">PRODUCT DESIGN · WELLNESS</p>
+            <h3>Grow Together — Bertumbuh pelan-pelan</h3>
+          </div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </div>
+        <p class="project-summary">Konsep landing page untuk produk kebiasaan sehat yang terasa suportif, ringan, dan tidak menggurui pengguna.</p>
+      </article>
+
+      <!-- Proyek 4: Alur Kerja -->
+      <article class="project-card reveal" data-category="design">
+        <button class="project-visual visual-finance" type="button" data-project="alur" aria-label="Lihat detail konsep Alur Kerja">
+          <span class="visual-index">04 — KONSEP SAAS</span>
+          <span class="finance-window">
+            <span class="window-dots">● ● ●</span>
+            <span class="finance-title">Task Velocity<br>Sprint 12 <span>⚡</span></span>
+            <span class="finance-balance-label">COMPLETED WORK</span>
+            <span class="finance-balance">94.8<small>%</small></span>
+            <span class="finance-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="finance-bottom"><i>Backlog</i><i>In Progress</i><i>Done</i></span>
+          </span>
+          <span class="visual-open">Lihat detail ↗</span>
+        </button>
+        <div class="project-info">
+          <div>
+            <p class="project-type">UI / UX DESIGN · SAAS</p>
+            <h3>Alur Kerja — Kolaborasi tanpa hambatan</h3>
+          </div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </div>
+        <p class="project-summary">Platform produktivitas dan sistem manajemen kerja tim dengan visualisasi progres visual yang jernih dan responsif di berbagai perangkat.</p>
+      </article>
+    </div>
+
+    <!-- Call to Action Banner -->
+    <section class="section page-cta-banner reveal">
+      <div class="cta-banner-card">
+        <p class="eyebrow">TERTARIK BEKERJA SAMA?</p>
+        <h2>Mari wujudkan ide produk<br><span class="highlight">bersama-sama.</span></h2>
+        <p>Saya siap membantu Anda mulai dari perancangan antarmuka intuitif di Figma hingga rekayasa kode website yang cepat dan mudah dikembangkan.</p>
+        <div class="cta-actions">
+          <a class="button button-primary" href="contact.html">Mulai Diskusi Proyek <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="about.html">Kenali Cara Kerja Saya <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">z.</span>
+        <span>zarkasi<span class="brand-dot">.</span></span>
+      </a>
+      <span>Dirancang dengan rasa ingin tahu. © <span data-year></span> Zarkasi</span>
+      <a class="back-top" href="#main">Kembali ke atas ↑</a>
+    </div>
+  </footer>
+
+  <dialog class="project-dialog" aria-labelledby="dialog-title">
+    <form method="dialog"><button class="dialog-close" aria-label="Tutup detail proyek">×</button></form>
+    <p class="eyebrow" id="dialog-category"></p>
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-description"></p>
+    <div class="dialog-tags" id="dialog-tags"></div>
+  </dialog>
+</body>
+</html>
